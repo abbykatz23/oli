@@ -1,0 +1,4 @@
+inky[rpi,fonts]
+requests
+Pillow
+flask

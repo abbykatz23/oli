@@ -6,8 +6,8 @@ Wants=network-online.target
 [Service]
 Type=simple
 User=pi
-WorkingDirectory=/home/pi/oli
-ExecStart=/usr/bin/python3 /home/pi/oli/web.py
+WorkingDirectory=%h/oli
+ExecStart=%h/.venv/bin/python3 %h/oli/web.py
 Restart=on-failure
 RestartSec=5
 
