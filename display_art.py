@@ -21,7 +21,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(message)s",
     handlers=[
-        logging.FileHandler("/home/pi/display_art.log"),
+        logging.FileHandler("/home/oli/display_art.log"),
         logging.StreamHandler(sys.stdout),
     ]
 )
