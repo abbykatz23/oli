@@ -1,13 +1,13 @@
 [Unit]
-Description=Chase's Inky art display web UI
+Description=Oli's Inky art display web UI
 After=network-online.target
 Wants=network-online.target
 
 [Service]
 Type=simple
 User=pi
-WorkingDirectory=/home/pi/chase
-ExecStart=/usr/bin/python3 /home/pi/chase/web.py
+WorkingDirectory=/home/pi/oli
+ExecStart=/usr/bin/python3 /home/pi/oli/web.py
 Restart=on-failure
 RestartSec=5
 

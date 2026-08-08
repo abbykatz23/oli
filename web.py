@@ -25,7 +25,7 @@ current = None  # last subprocess.Popen, or None
 
 PAGE = """
 <!doctype html>
-<title>Chase's Art Display</title>
+<title>Oli's Art Display</title>
 <style>
   body { font-family: system-ui, sans-serif; display: grid; place-items: center;
          height: 100vh; margin: 0; background: #f4f1ea; }
@@ -36,7 +36,7 @@ PAGE = """
   p { color: #666; margin-top: 1rem; }
 </style>
 <form method="post" action="/refresh">
-  <button type="submit" id="btn">Chase Awesome!</button>
+  <button type="submit" id="btn">Oli Awesome!</button>
   {% if msg %}<p>{{ msg }}</p>{% endif %}
 </form>
 <script>
@@ -44,7 +44,7 @@ PAGE = """
   const btn = document.getElementById("btn");
   function pick() {
     const w = words[Math.floor(Math.random() * words.length)];
-    btn.textContent = "Chase " + w + "!";
+    btn.textContent = "Oli " + w + "!";
   }
   pick();
   setInterval(pick, 2500);
